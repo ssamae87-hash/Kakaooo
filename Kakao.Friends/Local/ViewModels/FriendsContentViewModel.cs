@@ -6,19 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kakao.Login.Local.ViewModels
+namespace Kakao.Friends.Local.ViewModels
 {
-    public partial class LoginContentViewModel : ObservableBase
+    public partial class FriendsContentViewModel : ObservableBase
     {
-        public LoginContentViewModel()
+        public FriendsContentViewModel()
         {
-            
+
         }
 
 
         [RelayCommand]
         private void Login()
-        { 
+        {
         }
     }
 }

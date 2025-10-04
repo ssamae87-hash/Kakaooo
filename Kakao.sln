@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kakao", "Kakao\Kakao.csproj", "{8BF49049-E8F5-4C55-A534-08232E1CD33E}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Studio", "Studio", "{C8D5274F-AC00-46C7-1F8D-E88E81087A52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Partial", "Partial", "{BFCB153F-F731-4B6B-BEF8-F62EA1D08A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kakao.Friends", "Kakao.Friends\Kakao.Friends.csproj", "{56227132-B8E1-43AF-89B3-FB75E522D344}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{9AC1BC0F-E7B7-452D-B1A1-8F39DF14FE26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC1BC0F-E7B7-452D-B1A1-8F39DF14FE26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC1BC0F-E7B7-452D-B1A1-8F39DF14FE26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56227132-B8E1-43AF-89B3-FB75E522D344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56227132-B8E1-43AF-89B3-FB75E522D344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56227132-B8E1-43AF-89B3-FB75E522D344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56227132-B8E1-43AF-89B3-FB75E522D344}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{8BF49049-E8F5-4C55-A534-08232E1CD33E} = {C8D5274F-AC00-46C7-1F8D-E88E81087A52}
 		{EAF47A6D-C766-4499-9ECA-5EDDE6642173} = {BFCB153F-F731-4B6B-BEF8-F62EA1D08A95}
 		{9AC1BC0F-E7B7-452D-B1A1-8F39DF14FE26} = {BFCB153F-F731-4B6B-BEF8-F62EA1D08A95}
+		{56227132-B8E1-43AF-89B3-FB75E522D344} = {BFCB153F-F731-4B6B-BEF8-F62EA1D08A95}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9995BB7-E0CC-40F9-AAAA-553885B1C2ED}
