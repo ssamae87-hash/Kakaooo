@@ -12,14 +12,14 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
                         <StackPanel>
-                            <TextBlock Text="Login"
+                            <TextBlock Text="Friends"
                                        Margin="10"
                                        FontSize="24"/>
-                            <Button Content="Login"
+                            <!--<Button Content="Login"
                                     Margin="10"
                                     Padding="8 4 8 4"
                                     HorizontalAlignment="Left"
-                                    Command="{Binding LoginCommand}"/>
+                                    Command="{Binding LoginCommand}"/>-->
                         </StackPanel>
                     </Border>
                 </ControlTemplate>
