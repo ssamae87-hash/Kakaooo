@@ -12,6 +12,7 @@
                     <Border Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}">
+                        <james:JamesRegion RegionName="MainRegion"/>
                         <StackPanel>
                             
                             <james:JamesRegion RegionName="MainRegion"/>
