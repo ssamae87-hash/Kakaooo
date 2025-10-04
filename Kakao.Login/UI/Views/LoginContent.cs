@@ -9,5 +9,12 @@ namespace Kakao.Login.UI.Views
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(LoginContent), new FrameworkPropertyMetadata(typeof(LoginContent)));
         }
+
+
+        public LoginContent()
+        {
+
+
+        }
     }
 }
