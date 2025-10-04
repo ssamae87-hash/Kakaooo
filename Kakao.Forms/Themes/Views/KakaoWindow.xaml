@@ -4,6 +4,7 @@
     xmlns:views="clr-namespace:Kakao.Forms.UI.Views">
 
     <Style TargetType="{x:Type views:KakaoWindow}">
+        <Setter Property="Background" Value="#FFFFFF"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type views:KakaoWindow}">
@@ -15,4 +16,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-</ResourceDictionary>
+</ResourceDictionary>es
