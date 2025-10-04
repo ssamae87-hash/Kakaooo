@@ -1,4 +1,6 @@
-﻿using Prism.Ioc;
+﻿using Jamesnet.Wpf.Controls;
+using Kakao.Login.UI.Views;
+using Prism.Ioc;
 using Prism.Modularity;
 using System;
 using System.Collections.Generic;
@@ -17,7 +19,7 @@ namespace Kakao.Setting
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterSingleton<ViewModules>();
+            containerRegistry.RegisterSingleton<IViewable, LoginContent>("LoginContent");
         }
     }
 }

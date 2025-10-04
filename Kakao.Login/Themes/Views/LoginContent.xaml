@@ -4,7 +4,7 @@
     xmlns:views="clr-namespace:Kakao.Login.UI.Views">
 
     <Style TargetType="{x:Type views:LoginContent}">
-        <Setter Property="Background" Value="#FFFFFF"/>
+        <Setter Property="Background" Value="Yellow"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type views:LoginContent}">

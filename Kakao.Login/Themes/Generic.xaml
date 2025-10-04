@@ -4,6 +4,7 @@
 
 
     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Kakao.Login;component/Themes/Views/LoginContent.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
     
