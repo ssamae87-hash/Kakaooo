@@ -8,8 +8,8 @@ namespace Kakao.Setting
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            IRegionManager regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("MainRegion", "LoginContent");
+            //IRegionManager regionManager = containerProvider.Resolve<IRegionManager>();
+            //regionManager.RegisterViewWithRegion("MainRegion", "LoginContent");
 
         }
 
