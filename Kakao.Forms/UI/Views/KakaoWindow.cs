@@ -7,7 +7,8 @@ namespace Kakao.Forms.UI.Views
     {
         static KakaoWindow()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(KakaoWindow), new FrameworkPropertyMetadata(typeof(KakaoWindow)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(KakaoWindow),
+                new FrameworkPropertyMetadata(typeof(KakaoWindow)));
         }
     }
 }
