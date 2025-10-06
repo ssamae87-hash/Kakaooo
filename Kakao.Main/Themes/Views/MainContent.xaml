@@ -17,23 +17,10 @@
                         <james:JamesGrid Rows="*,Auto"
                                          Columns="Auto,*">
                             <StackPanel>
-                                <units:VerticalMenuList ItemsSource="{Binding Menus}">
-                                    
-                                </units:VerticalMenuList>
+                                <units:VerticalMenuList ItemsSource="{Binding Menus}"
+                                                        SelectedItem="{Binding Menu}"/>
 
-                             
-                                <Button Content="Friends"
-                                        Margin="10"
-                                        Padding="8 4 8 4"
-                                        HorizontalAlignment="left"
-                                        Command="{Binding FriendsCommand}"/>
-
-                                <Button Content="Chats"
-                                        Margin="10"
-                                        Padding="8 4 8 4"
-                                        HorizontalAlignment="left"
-                                        Command="{Binding ChatsCommand}"/>
-
+                          
                                 <Button Content="Logout"
                                         Margin="10"
                                         Padding="8 4 8 4"

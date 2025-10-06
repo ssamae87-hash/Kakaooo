@@ -18,56 +18,45 @@ namespace Kakao.Main.Local.ViewModels
         [ObservableProperty]
         private List<MenuModel> _menus;
 
+        [ObservableProperty]
+        private MenuModel _menu;
+
         public MainContentViewModel(IRegionManager reionManager, IContainerProvider containerProvider)
         {
             _regionManager = reionManager;
             _containerProvider = containerProvider;
 
             Menus = GetMenus();
+             
         }
 
         private List<MenuModel> GetMenus()
         {
             List<MenuModel> source = new();
-            source.Add(new MenuModel().DataGetn("Chats"));
-            source.Add(new MenuModel().DataGetn("Friends"));
-            source.Add(new MenuModel().DataGetn("Chats"));
+            source.Add(new MenuModel().DataGetn(ContentNameManager.Chats));
+            source.Add(new MenuModel().DataGetn(ContentNameManager.Friends));
+            source.Add(new MenuModel().DataGetn(ContentNameManager.More));
 
             return source;
         }
 
-        [RelayCommand]
-        private void Friends()
+        partial void OnMenuChanged(MenuModel value)
         {
-
             IRegion contentRegion = _regionManager.Regions[RegionNameManager.ContentRegion];
-            IViewable friendsContent = _containerProvider.Resolve<IViewable>(ContentNameManager.Friends);
+            IViewable content = _containerProvider.Resolve<IViewable>(value.Id);
 
 
-            if (!contentRegion.Views.Contains(friendsContent))
+            if (!contentRegion.Views.Contains(content))
             {
-                contentRegion.Add(friendsContent);
+                contentRegion.Add(content);
             }
 
-            contentRegion.Activate(friendsContent);
+            contentRegion.Activate(content);
 
         }
 
-        [RelayCommand]
-        private void Chats()
-        {
 
-            IRegion contentRegion = _regionManager.Regions[RegionNameManager.ContentRegion];
-            IViewable chatsContent = _containerProvider.Resolve<IViewable>(ContentNameManager.Chat);
-
-
-            if (!contentRegion.Views.Contains(chatsContent))
-            {
-                contentRegion.Add(chatsContent);
-            }
-
-            contentRegion.Activate(chatsContent);
-        }
+  
 
         [RelayCommand]
         private void Logout()
