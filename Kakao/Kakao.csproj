@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kakao.Chat\Kakao.Chat.csproj" />
     <ProjectReference Include="..\Kakao.Core\Kakao.Core.csproj" />
     <ProjectReference Include="..\Kakao.Forms\Kakao.Forms.csproj" />
     <ProjectReference Include="..\Kakao.Friends\Kakao.Friends.csproj" />
