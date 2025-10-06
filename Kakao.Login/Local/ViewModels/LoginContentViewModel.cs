@@ -23,14 +23,14 @@ namespace Kakao.Login.Local.ViewModels
         private void Login()
         {
             IRegion mainRegion = _regionManager.Regions[RegionNameManager.MainRegion];
-            IViewable friendsContent = _containerProvider.Resolve<IViewable>(ContentNameManager.Friends);
+            IViewable mainContent = _containerProvider.Resolve<IViewable>(ContentNameManager.Main);
 
-            if(!mainRegion.Views.Contains(friendsContent))
+            if(!mainRegion.Views.Contains(mainContent))
             {
-                mainRegion.Add(friendsContent);
+                mainRegion.Add(mainContent);
             }
 
-            mainRegion.Activate(friendsContent);
+            mainRegion.Activate(mainContent);
         }
     }
 }

@@ -12,6 +12,8 @@ namespace Kakao.Core.Names
 
         public static string Login => nameof(Contents.Login);
         public static string Friends => nameof(Contents.Friends);
+        public static string Main => nameof(Contents.Main);
+        
 
     }
 }

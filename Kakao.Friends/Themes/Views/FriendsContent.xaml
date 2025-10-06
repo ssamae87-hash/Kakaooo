@@ -15,7 +15,7 @@
                             <TextBlock Text="Friends"
                                        Margin="10"
                                        FontSize="24"/>
-                            <Button Content="Logput"
+                            <Button Content="Logout"
                                     Margin="10"
                                     Padding="8 4 8 4"
                                     HorizontalAlignment="left"
