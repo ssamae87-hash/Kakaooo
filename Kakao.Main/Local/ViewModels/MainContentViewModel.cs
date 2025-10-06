@@ -1,6 +1,8 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Jamesnet.Wpf.Controls;
 using Jamesnet.Wpf.Mvvm;
+using Kakao.Core.Models;
 using Kakao.Core.Names;
 using Prism.Ioc;
 using Prism.Regions;
@@ -12,13 +14,27 @@ namespace Kakao.Main.Local.ViewModels
         private readonly IRegionManager _regionManager;
         private readonly IContainerProvider _containerProvider;
 
+
+        [ObservableProperty]
+        private List<MenuModel> _menus;
+
         public MainContentViewModel(IRegionManager reionManager, IContainerProvider containerProvider)
         {
             _regionManager = reionManager;
             _containerProvider = containerProvider;
+
+            Menus = GetMenus();
         }
 
+        private List<MenuModel> GetMenus()
+        {
+            List<MenuModel> source = new();
+            source.Add(new MenuModel().DataGetn("Chats"));
+            source.Add(new MenuModel().DataGetn("Friends"));
+            source.Add(new MenuModel().DataGetn("Chats"));
 
+            return source;
+        }
 
         [RelayCommand]
         private void Friends()

@@ -3,7 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:views="clr-namespace:Kakao.Main.UI.Views"
     xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf"
-    xmlns:names="clr-namespace:Kakao.Core.Names;assembly=Kakao.Core">
+    xmlns:names="clr-namespace:Kakao.Core.Names;assembly=Kakao.Core"
+    xmlns:units="clr-namespace:Kakao.Main.UI.Units">
 
     <Style TargetType="{x:Type views:MainContent}">
         <Setter Property="Background" Value="Yellow"/>
@@ -16,13 +17,11 @@
                         <james:JamesGrid Rows="*,Auto"
                                          Columns="Auto,*">
                             <StackPanel>
+                                <units:VerticalMenuList ItemsSource="{Binding Menus}">
+                                    
+                                </units:VerticalMenuList>
 
-                                <ListBox>
-                                    <ListBoxItem>Friends</ListBoxItem>
-                                    <ListBoxItem>Chats</ListBoxItem>
-                                    <ListBoxItem>More</ListBoxItem>
-                                </ListBox>
-
+                             
                                 <Button Content="Friends"
                                         Margin="10"
                                         Padding="8 4 8 4"
