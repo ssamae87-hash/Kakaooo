@@ -4,7 +4,7 @@ using System.Windows.Controls;
 namespace Kakao.LayoutSupport.UI.Units
 {
   
-    public class TaskBarButton : Control
+    public class TaskBarButton : Button
     {
         static TaskBarButton()
         {

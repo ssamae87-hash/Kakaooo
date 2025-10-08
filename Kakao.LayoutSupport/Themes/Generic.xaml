@@ -4,6 +4,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/TaskBarButton.xaml"/>
+        <ResourceDictionary Source="/Kakao.LayoutSupport;component/Themes/Units/PlaceholderTextBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
 </ResourceDictionary>
