@@ -24,10 +24,11 @@
                                 <birth:BirthdaysboxItem>asdf</birth:BirthdaysboxItem>
                             </birth:BirthdaysBox>
 
-                            <favorites:FavoriteBox Tag="Favorites">
-                                <favorites:FavoriteBoxItem>adfsfs</favorites:FavoriteBoxItem>
-                                <favorites:FavoriteBoxItem>adfsfs</favorites:FavoriteBoxItem>
-                                <favorites:FavoriteBoxItem>adfsfs</favorites:FavoriteBoxItem>
+                            <favorites:FavoriteBox Tag="Favorites"
+                                                   DoubleClickCommand="{Binding DoubleClickCommand }"
+                                                   ItemsSource="{Binding Favorites}">
+                                
+                              
                             </favorites:FavoriteBox>
 
                             <Button Content="Logout"

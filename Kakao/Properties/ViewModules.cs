@@ -8,7 +8,7 @@ using Kakao.More.UI.Views;
 using Prism.Ioc;
 using Prism.Modularity;
 
-namespace Kakao.Setting
+namespace Kakao.Properties
 {
     internal class ViewModules : IModule
     {

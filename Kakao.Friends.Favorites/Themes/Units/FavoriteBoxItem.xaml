@@ -7,7 +7,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate>
-                    <TextBlock Text="1231231321"/>
+                    <TextBlock Text="{Binding Name}" Padding="10"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
