@@ -1,7 +1,8 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:units="clr-namespace:Kakao.LayoutSupport.UI.Units">
+    xmlns:units="clr-namespace:Kakao.LayoutSupport.UI.Units"
+    xmlns:james="clr-namespace:Jamesnet.Wpf.Controls;assembly=Jamesnet.Wpf">
 
 
         
@@ -18,9 +19,17 @@
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Padding="{TemplateBinding Padding}">
-                        <ItemsPresenter/>
-
+                        <james:JamesGrid Rows="Auto, Auto" Columns="*, Auto">
+                            <TextBlock Text="{TemplateBinding Tag}"/>
+                            <CheckBox x:Name="expend" Content="Toggle"/>
+                            <ItemsPresenter x:Name="items" Grid.Column="2"/>
+                        </james:JamesGrid>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=expend, Path=IsChecked}" Value="True">
+                            <Setter TargetName="items" Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
 
                 </ControlTemplate>
             </Setter.Value>
